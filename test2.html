@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<style>
+    /* button{*/
+    /*    width: 200px;*/
+    /*}*/
+    td{
+        width: 50px;
+        height: 50px;
+    }
+    table input{
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<body>
+<form>
+    <!--    <input type="text" id="input" size="50" value="" disabled>-->
+    <table border="1px soild black">
+        <fidleset>
+            <tr >
+                <td colspan="7">
+                    <p id="outputX" style="text-align: right">0</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Rad" id="Rad" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value=""  disabled  style="width: 100%">
+                    <p hidden id="memory"></p>
+                </td>
+                <td>
+                    <input type="button" value="x!" id="x!" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value="(" id="(" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value=")" id=")" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value="%" id="%" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value="AC" id="AC" onclick="resett()" style="width: 100%">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Inv" id="Inv" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value="sin" id="sin"  style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value="ln" id="ln" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value="7" id="7" onclick="inputX(this.value)" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value="8" id="8" onclick="inputX(this.value)" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value="9" id="9" onclick="inputX(this.value)" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value="/" id="/" onclick="inputX(this.value)" style="width: 100%">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value=&Pi; id="pi" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value="cos" id="cos" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value="log" id="log" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" class="Nu" value="4" id="4" onclick="inputX(this.value)" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" class="Nu" value="5" id="5" onclick="inputX(this.value)" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" class="Nu" value="6" id="6" onclick="inputX(this.value)" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value="*" id="x" onclick="inputX(this.value)" style="width: 100%">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="e" id="e" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value="tan" id="tan" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value=&radic; id="radic" style="width: 100%">
+                </td>
+                <td>
+                    <input  type="button" value="1" id="1" onclick="inputX(this.value)" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value="2" id="2" onclick="inputX(this.value)" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value="3" id="3" onclick="inputX(this.value)" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value="-" id="-" onclick="inputX(this.value)" style="width: 100%">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Ans" id="Ans" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value="EXP" id="EXP" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value="^" id="luythua" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value="0" id="0" onclick="inputX(this.value)" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value="." id="." onclick="inputX(this.value)" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value="=" id="=" onclick="calculator()" style="width: 100%">
+                </td>
+                <td>
+                    <input type="button" value="+" id="+" onclick="inputX(this.value)" style="width: 100%">
+                </td>
+            </tr>
+        </fidleset>
+    </table>
+</form>
+<script src="calculator.js" >
+</script>
+
+
+</body>
+</html>
